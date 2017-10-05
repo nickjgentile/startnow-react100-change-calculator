@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Change Calculator</title>
+
+    <style>
+        body {
+            /* Source: https://uigradients.com */
+            background: #3a7bd5;
+            background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);
+            background: linear-gradient(to right, #3a6073, #3a7bd5);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root">
+        <div class="row" id="header">
+            <div class="col-lg-12">
+                <h2 style=color:#FF9800>Change Calculator <small style=color:azure>Calculatin yo Change</small></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="well">Enter Information</div>
+                        <input class="form-control input-lg" type="text" placeholder="Amount Due" />
+                        <input class="form-control input-lg" type="text" placeholder="Amount Received" />
+                        <button type="submit" name="calculate" class="btn btn-primary btn-block">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="alert alert-success fade in">
+                            <a href="#" class="close" data-dismiss="alert">&times;</a>
+                            <strong>Success!</strong> total change due:
+                        </div>
+                        <div class="alert alert-danger fade in">
+                            <a href="#" class="close" data-dismiss="alert">&times;</a>
+                            <strong>Danger!</strong> additional money owed:
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="well col-md-3">
+                                    <strong>Twenties</strong>
+                                    <p>{this.state.twenties}</p>
+                                </div>
+                                <div class="well col-md-3">
+                                    <strong>Tens</strong>
+                                    <p>{this.state.tens}</p>
+                                </div>
+                                <div class="well col-md-3">
+                                    <strong>Fives</strong>
+                                    <p>{this.state.fives}</p>
+                                </div>
+                                <div class="well col-md-3">
+                                    <strong>Ones</strong>
+                                    <p>{this.state.ones}</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="well col-md-3">
+                                    <strong>Quarters</strong>
+                                    <p>{this.state.quarters}</p>
+                                </div>
+                                <div class="well col-md-3">
+                                    <strong>Dimes</strong>
+                                    <p>{this.state.dimes}</p>
+                                </div>
+                                <div class="well col-md-3">
+                                    <strong>Nickels</strong>
+                                    <p>{this.state.nickels}</p>
+                                </div>
+                                <div class="well col-md-3">
+                                    <strong>Pennies</strong>
+                                    <p>{this.state.pennies}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="bundle.js"></script>
+</body>
+
+</html>
